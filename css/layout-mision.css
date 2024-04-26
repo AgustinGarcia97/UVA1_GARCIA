@@ -1,0 +1,52 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(225, 225, 229);
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto); /* Altura automática para cada fila */
+    grid-auto-flow: row; /* Organiza los elementos en filas */
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1f2f46;
+    padding: 20px;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    margin-bottom: 15px;
+    padding:10px;
+  }
+  
+  section ol {
+    padding-left: 20px;
+   
+  }
+  section ol li{
+    padding:10px;
+  }
+  /* Responsive Styles */
+  @media screen and (min-width: 768px) {
+    main {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  
